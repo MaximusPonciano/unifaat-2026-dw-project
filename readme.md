@@ -47,6 +47,8 @@ POSTGRES_PORT=6789
 POSTGRES_USER=unifaat_user
 POSTGRES_PASSWORD=**COLOQUE_SUA_SENHA_AQUI**
 
+JWT_SECRET=**COLOQUE_SUA_CHAVE_SECRETA_AQUI**
+
 NODE_WEB_PORT=3000
 ```
 
@@ -284,8 +286,9 @@ unifaat-2026-dw-project/
 | Container           | Host            | Porta Interna | Porta Externa (localhost) |
 |--------------------|-----------------|---------------|---------------|
 | postgres-container | postgres_host   | 5432          | 6789          |
-| nginx-container | nginx-container   | 80          | 8080          |
 | nodeweb-container | nodeweb_host   | 3000          | -         |
+| nodecommand-container | nodecommand_host   | -          | -         |
+| nginx-container | nginx-container   | 80          | 8080          |
 
 ### Executar Commands no Docker
 
