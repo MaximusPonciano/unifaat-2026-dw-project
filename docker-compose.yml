@@ -57,6 +57,7 @@ services:
     env_file: 
       - .env
       - .env.docker
+    command: ["--queue=executar-job"]
     volumes:
       - .:/app
       - nodemodules14-volume:/app/node_modules
